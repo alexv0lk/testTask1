@@ -1,0 +1,15 @@
+.span-container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 200px 0 ;
+    /* flex-wrap: wrap; */
+}
+
+.form{
+    margin: 50px 200px 0;
+}
+
+span{
+    /* margin-right: 250px; */
+    font-size: 25px;
+}
