@@ -3,7 +3,7 @@ const form = document.forms.form;
 const input = document.querySelector('.form__input');
 const spanContainer = document.querySelector('.span-container');
 const formButton = document.querySelector('.form__button');
-let quantityRender = 0;
+let quantityRender;
 let quantitySpan;
 const quantityOneRender = 500;
 
@@ -49,6 +49,7 @@ input.addEventListener('input', function(){
 form.addEventListener('submit', function(event){
     event.preventDefault();
     spanContainer.textContent="";
+    quantityRender = 0;
     renderSpan(spanContainer, input.value);
     console.log(`Введенное количество: ${input.value}.`)
     if(input.value>quantityOneRender){
